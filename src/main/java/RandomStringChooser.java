@@ -6,7 +6,7 @@ public class RandomStringChooser
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
   private ArrayList <String> list;
-  public RandomStringChooser{
+  public RandomStringChooser(String[] wordList){
     for (int i = 0; i < wordList.length; i++){
       wordList.add(i, wordList[i]);
     }
