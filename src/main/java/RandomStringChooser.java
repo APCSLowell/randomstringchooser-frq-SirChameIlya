@@ -5,7 +5,7 @@ public class RandomStringChooser
   
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
-  private ArrayList <String< list;
+  private ArrayList <String> list;
   public RandomStringChooser{
     for (int i = 0; i < wordList.length; i++){
       wordList.add(i, wordList[i]);
@@ -15,7 +15,7 @@ public class RandomStringChooser
     if (list.size() == 0){
       return "NONE";
     }
-    return word.remove((int)(Math.random()*list.size());
+    return word.remove((int)(Math.random()*list.size()));
   }
   
 }
