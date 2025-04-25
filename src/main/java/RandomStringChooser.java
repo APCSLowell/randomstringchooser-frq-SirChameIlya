@@ -8,14 +8,14 @@ public class RandomStringChooser
   private ArrayList <String> list;
   public RandomStringChooser(String[] wordList){
     for (int i = 0; i < wordList.length; i++){
-      wordList.add(i, wordList[i]);
+      list.add(i, wordList[i]);
     }
   }
   public String getNext(){
     if (list.size() == 0){
       return "NONE";
     }
-    return word.remove((int)(Math.random()*list.size()));
+    return list.remove((int)(Math.random()*list.size()));
   }
   
 }
